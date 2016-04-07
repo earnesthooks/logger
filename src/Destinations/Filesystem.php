@@ -2,9 +2,9 @@
 
 use Logger/Destinations/DestinationInterface;
 
-$file = 'blacklight.txt';
+$file = 'blacklight.log';
 
-$data = "This is just a Test\n\r";
+$data = "This is just a Test";
 
 class Filesystem implements DestinationInterface {
 	public function __construct($file) {
@@ -12,6 +12,8 @@ class Filesystem implements DestinationInterface {
 	   	// Note: $data is a string — it's already been run through your Formatter->format function
 
 	   	this->$file = $file;
+
+	   	this->$data = $data;
 
 	   	file_put_contents($this->file, $data . "\n", FILE_APPEND); 	
 	}
