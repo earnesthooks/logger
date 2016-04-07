@@ -1,6 +1,6 @@
 <?php
 
-namespace Logger/Formatters;
+namespace Logger\Formatters;
 
 interface FormatterInterface {
 	public function format(array $data);

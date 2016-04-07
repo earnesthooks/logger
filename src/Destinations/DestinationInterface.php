@@ -1,6 +1,6 @@
 <?php
 
-namespace Logger/Destinations;
+namespace Logger\Destinations;
 
 interface DestinationInterface {
 	public function save($data);

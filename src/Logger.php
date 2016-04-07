@@ -4,8 +4,8 @@ require_once __DIR__.'/vendor/autoload.php'; //Autoload files with Composer
 
 namespace Logger;
 
-use Logger/Destinations/DestinationInterface;
-use Logger/Formatters/FormatterInterface;
+use Logger\Destinations\DestinationInterface;
+use Logger\Formatters\FormatterInterface;
 
 // Create a logger and pass it the destination and formatter you want to use.
 // Note the Filesystem needs to have a __construct__ function that takes the 

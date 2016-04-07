@@ -1,6 +1,8 @@
 <?php
 
-use Logger/Destinations/DestinationInterface;
+namespace Logger\Destinations;
+
+use Logger\Destinations\DestinationInterface;
 
 $file = 'blacklight.log';
 
