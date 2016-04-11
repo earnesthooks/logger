@@ -3,5 +3,5 @@
 namespace Logger\Destinations;
 
 interface DestinationInterface {
-	public function save($data);
+	public function save(DestinationInterface $data);
 }

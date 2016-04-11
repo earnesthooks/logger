@@ -1,7 +1,5 @@
 <?php
 
-require_once __DIR__.'/vendor/autoload.php'; //Autoload files with Composer
-
 namespace Logger;
 
 use Logger\Destinations\DestinationInterface;
@@ -27,7 +25,7 @@ class Logger {
 	}
 }
 
-$logger = new Logger(new Filesystem(__DIR__ . '/logs/blacklight.log'), new JSON);
+/*$logger = new Logger(new Filesystem(__DIR__ . '/logs/blacklight.log'), new JSON);
 
 // Now Log something
 $logger->log([
@@ -35,7 +33,7 @@ $logger->log([
     'worked' => 'yes'
 ]);
 ​
-echo 'Done!';
+echo 'Done!';*/
 ​
 // You should see this in your log file blacklight.log
 // {"name": "Earnest", "worked": "yes"}
