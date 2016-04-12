@@ -7,7 +7,7 @@ use Logger\Destinations\DestinationInterface;
 class Filesystem implements DestinationInterface {
 
 	private $file;
-	
+
 	private $data;
 	
 	public function __construct(DestinationInterface $data) {
@@ -20,4 +20,5 @@ class Filesystem implements DestinationInterface {
 
 	   	file_put_contents($file, $data . "\n", FILE_APPEND);
 	}
+
 }
