@@ -2,15 +2,13 @@
 
 namespace Logger\Destinations;
 
-use Logger\Destinations\DestinationInterface;
-
 class Filesystem implements DestinationInterface {
 
 	private $file;
 
 	private $data;
 	
-	public function __construct(DestinationInterface $data) {
+	public function __construct($file, array $data) {
 	   	// Save data to a file, appending it to a newline. Create the file if it doesn't exist.
 	   	// Note: $data is a string — it's already been run through your Formatter->format function
 
